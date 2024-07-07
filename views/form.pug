@@ -1,0 +1,12 @@
+extends layout
+
+body 
+    form(action='/new' method='POST')
+        p 
+            | Name: 
+            input(type='text', name='userName', value='')
+            | Message: 
+            input(type='text', name='userMsg', value='')
+         input(type='submit', value='Submit')
+
+  
