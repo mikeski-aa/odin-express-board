@@ -1,10 +1,12 @@
 extends layout
 
 block content
- ul
-      each message in messages
-        li
-          strong= message.user  
-            = ' - ' + message.text + ' (added on ' + message.added.toLocaleDateString() + ')'
+  ul
+        each message in messages
+          li
+            strong= message.user  
+              = ' - ' + message.text + ' (added on ' + message.added.toLocaleDateString() + ')'
+  a( href='/new') Add a new post!
+
 
   

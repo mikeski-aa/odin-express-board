@@ -14,9 +14,18 @@ const messages = [
   },
 ];
 
+// function urlChange() {
+//   console.log("test");
+//   window.location.href = "/new";
+// }
+
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Mini Messageboard", messages: messages });
+  res.render("index", {
+    title: "Mini Messageboard",
+    messages: messages,
+    // urlChangeFun: urlChange,
+  });
 });
 
 router.get("/new", function (req, res, next) {
